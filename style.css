@@ -1,0 +1,123 @@
+body {
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+h1{
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    background-color: rgb(21, 51, 78);
+    font-weight: bold;
+    border-bottom:solid 3px white ;
+}
+
+
+
+.navbar-nav .nav-link:hover, 
+.nav-link.active {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%); /* Changes the color to white */
+}
+.navbar-toggler .toggler-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+.navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.home {
+    background-color: rgb(21, 51, 78);
+}
+/* HOME AND CONTACT */
+/* section {
+    scroll-margin-top: 70px; 
+} */
+.about {
+    /* scroll-margin-top: 100px; */
+    
+    padding: 1rem 0;
+    background-color: #EDF7F6;
+}
+.skills{
+    padding: 1rem 0;
+    background-color: rgb(21, 51, 78);
+    /* scroll-margin-top: 80px; */
+}
+.projects{
+    /* scroll-margin-top: 120px; */
+    border-bottom: 5px solid rgb(21, 51, 78);
+}
+
+.projects p{
+    text-align:justify;
+}
+.contact {
+    background-color: rgb(21, 51, 78);
+}
+
+.hidden-1{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.hidden-2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hidden-3{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateZ(-100%);
+    transition: all 1.5s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.col-3:nth-child(2) .logo {
+    transition-delay: 200ms;
+}
+.col-3:nth-child(3) .logo {
+    transition-delay: 400ms;
+}
+.col-3:nth-child(4) .logo {
+    transition-delay: 600ms;
+}
+
+
